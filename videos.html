@@ -9,7 +9,7 @@
 <body>
 
 <nav class="navbar">
-  <a href="index.html" class="nav-brand"><span>Emanuel Pinto Sampaio</span></a>
+  <a href="index.html" class="nav-brand"><span>φ</span></a>
   <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
   <ul class="nav-links">
     <li><a href="index.html">Início</a></li>
@@ -26,15 +26,16 @@
   <div class="container">
 
     <header class="section-header">
-      <p class="section-tag">Canal no YouTube</p>
+      <p class="section-tag">YouTube</p>
       <h1>Vídeos</h1>
-      <p>Aulas gravadas, revisões e materiais em vídeo. Clique no botão ▶ para reproduzir diretamente aqui, ou acesse o canal no YouTube.</p>
+      <p>Vídeos selecionados, animações e conteúdos matemáticos interessantes.</p>
     </header>
-
+    <!--
     <div class="notice">
       <strong>Como adicionar vídeos:</strong> copie o ID do vídeo do YouTube (parte final da URL: <code>youtube.com/watch?v=<strong>ID_AQUI</strong></code>) e substitua nos atributos <code>data-src</code> e no link "Ver no YouTube". A miniatura segue o padrão <code>https://img.youtube.com/vi/ID/hqdefault.jpg</code>.
     </div>
-
+    -->
+  
     <!-- ===== CÁLCULO I ===== -->
     <section class="mat-category">
       <p class="mat-category-title">Cálculo I</p>
@@ -47,10 +48,9 @@
              2. Edite disciplina, título e descrição
         ============================================================= -->
 
-        <!-- Vídeo 1 -->
+        <!-- Vídeo 1
         <div class="video-card">
           <div class="video-thumb">
-            <!-- Iframe fica oculto até o clique; src é preenchido pelo JS -->
             <iframe
               data-src="https://www.youtube.com/embed/VIDEO_ID_1"
               style="display:none;"
@@ -58,7 +58,6 @@
               allowfullscreen
               title="Aula: Limite pelo Método da Tabela"
             ></iframe>
-            <!-- Placeholder clicável com miniatura do YouTube -->
             <div class="video-thumb-placeholder">
               <img
                 src="https://img.youtube.com/vi/VIDEO_ID_1/hqdefault.jpg"
@@ -73,18 +72,16 @@
           </div>
           <div class="video-info">
             <p class="video-discipline">Cálculo I</p>
-            <!-- Edite: título e descrição -->
             <p class="video-title">Aula 01 — Limite pelo Método da Tabela</p>
             <p class="video-desc">Introdução intuitiva ao conceito de limite. Definição informal e exemplos práticos.</p>
-            <!-- Edite: link direto para o YouTube -->
             <a href="https://www.youtube.com/watch?v=VIDEO_ID_1" target="_blank" rel="noopener"
                class="btn btn-outline-dark btn-sm" style="margin-top:.75rem;">
               Ver no YouTube ↗
             </a>
           </div>
-        </div>
+        </div>-->
 
-        <!-- Vídeo 2 -->
+        <!-- Vídeo 2 
         <div class="video-card">
           <div class="video-thumb">
             <iframe
@@ -115,9 +112,9 @@
               Ver no YouTube ↗
             </a>
           </div>
-        </div>
+        </div>-->
 
-        <!-- Vídeo 3 -->
+        <!-- Vídeo 3 
         <div class="video-card">
           <div class="video-thumb">
             <iframe
@@ -148,12 +145,12 @@
               Ver no YouTube ↗
             </a>
           </div>
-        </div>
+        </div>-->
 
       </div><!-- /video-grid -->
     </section>
-
-    <!-- ===== ÁLGEBRA LINEAR ===== -->
+    
+    <!-- ===== ÁLGEBRA LINEAR ===== 
     <section class="mat-category">
       <p class="mat-category-title">Álgebra Linear</p>
 
@@ -189,7 +186,7 @@
               Ver no YouTube ↗
             </a>
           </div>
-        </div>
+        </div>-->
 
         <!-- MODELO: copie este bloco para adicionar um vídeo
         <div class="video-card">
@@ -228,23 +225,20 @@
       </div>
     </section>
 
-    <!-- Link para o canal completo -->
+    <!-- Link para o canal completo 
     <div style="text-align:center;padding:2rem 0 3rem;">
-      <!-- Edite: link para o seu canal no YouTube -->
       <a href="https://www.youtube.com/@seucanal" target="_blank" rel="noopener" class="btn btn-primary">
         <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
           <path d="M19.59 6.69a4.83 4.83 0 01-3.77-2.75 12.48 12.48 0 00-9.63 0A4.83 4.83 0 012.41 6.69 51 51 0 002 12a51 51 0 00.41 5.31 4.83 4.83 0 003.77 2.75 12.48 12.48 0 009.63 0 4.83 4.83 0 003.77-2.75A51 51 0 0022 12a51 51 0 00-.41-5.31zM10 15.5v-7l6 3.5z"/>
         </svg>
         Ver todos os vídeos no YouTube
       </a>
-    </div>
+    </div> -->
 
   </div><!-- /container -->
 </div><!-- /page-wrapper -->
 
 <footer>
-  <p><strong>Emanuel Pinto Sampaio</strong> · Departamento de Matemática · UFES</p>
-  <p><a href="mailto:emanuel.sampaio@edu.ufes.br">emanuel.sampaio@edu.ufes.br</a></p>
   <p style="margin-top:.75rem;opacity:.6;">© <span id="year"></span> Emanuel Pinto Sampaio</p>
 </footer>
 
