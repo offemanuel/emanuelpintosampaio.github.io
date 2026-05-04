@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Provas — Emanuel Pinto Sampaio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-brand"> <span>Emanuel Pinto Sampaio</span></a>
+  <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  <ul class="nav-links">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="materiais.html">Materiais</a></li>
+    <li><a href="provas.html">Provas</a></li>
+    <li><a href="pesquisas.html">Pesquisas</a></li>
+    <li><a href="videos.html">Vídeos</a></li>
+    <li><a href="contato.html">Contato</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrapper">
+  <div class="container">
+
+    <header class="section-header">
+      <p class="section-tag">Banco de avaliações</p>
+      <h1>Provas</h1>
+      <p>Avaliações organizadas por disciplina. Selecione as abas <em>Atuais</em>, <em>Antigas</em> ou <em>Gabaritos</em>.</p>
+    </header>
+
+    <!-- ===== BUSCA ===== -->
+    <div class="search-bar">
+      <svg class="search-icon" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+      </svg>
+      <input type="search" id="search-input" placeholder="Buscar prova por disciplina, ano ou tipo..." autocomplete="off" />
+    </div>
+    <p id="search-count"></p>
+
+    <div class="notice">
+      <strong>Como adicionar provas:</strong> coloque os PDFs em <code>arquivos/</code> e copie um bloco <code>.exam-row</code> com o <code>href</code> atualizado.
+    </div>
+
+    <!-- =================================================================
+         BLOCO POR DISCIPLINA
+         Para adicionar uma nova disciplina: copie todo o .subject-block
+    ================================================================= -->
+
+    <!-- ===== CÁLCULO I ===== -->
+    <div class="subject-block" data-searchable>
+      <h3>Cálculo I</h3>
+
+      <!-- Abas -->
+      <div class="exam-tabs">
+        <button class="exam-tab">Atuais (2025)</button>
+        <button class="exam-tab">Antigas</button>
+        <button class="exam-tab">Gabaritos</button>
+      </div>
+
+      <!-- Painel: Atuais -->
+      <div class="exam-panel">
+        <div class="exam-row">
+          <div class="exam-row-info">
+            <span>P1 — Limites e Continuidade</span>
+            <small>2025.2 · 23 set 2025</small>
+          </div>
+          <!-- Edite: href com o caminho do arquivo -->
+          <a href="arquivos/calculo1-p1-2025-2.pdf" class="btn btn-download btn-sm" download>
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+            Baixar
+          </a>
+        </div>
+
+        <div class="exam-row">
+          <div class="exam-row-info">
+            <span>P2 — Derivadas e Aplicações</span>
+            <small>2025.2 · 28 out 2025</small>
+          </div>
+          <a href="arquivos/calculo1-p2-2025-2.pdf" class="btn btn-download btn-sm" download>
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+            Baixar
+          </a>
+        </div>
+
+        <!-- MODELO: copie para adicionar nova prova atual
+        <div class="exam-row">
+          <div class="exam-row-info">
+            <span>TÍTULO DA PROVA</span>
+            <small>SEMESTRE · DATA</small>
+          </div>
+          <a href="arquivos/ARQUIVO.pdf" class="btn btn-download btn-sm" download>Baixar</a>
+        </div>
+        -->
+      </div>
+
+      <!-- Painel: Antigas -->
+      <div class="exam-panel">
+        <div class="exam-row">
+          <div class="exam-row-info">
+            <span>P1 — 2024.2</span>
+            <small>Limites e Continuidade · 2024</small>
+          </div>
+          <a href="arquivos/calculo1-p1-2024-2.pdf" class="btn btn-download btn-sm" download>
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+            Baixar
+          </a>
+        </div>
+        <div class="exam-row">
+          <div class="exam-row-info">
+            <span>P2 — 2024.2</span>
+            <small>Derivadas · 2024</small>
+          </div>
+          <a href="arquivos/calculo1-p2-2024-2.pdf" class="btn btn-download btn-sm" download>
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+            Baixar
+          </a>
+        </div>
+        <div class="exam-row">
+          <div class="exam-row-info">
+            <span>Final — 2024.1</span>
+            <small>Conteúdo completo · 2024</small>
+          </div>
+          <a href="arquivos/calculo1-final-2024-1.pdf" class="btn btn-download btn-sm" download>
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+            Baixar
+          </a>
+        </div>
+      </div>
+
+      <!-- Painel: Gabaritos -->
+      <div class="exam-panel">
+        <div class="exam-row">
+          <div class="exam-row-info">
+            <span>Gabarito P1 — 2025.2</span>
+            <small>Disponibilizado após a prova</small>
+          </div>
+          <a href="arquivos/calculo1-p1-2025-2-gabarito.pdf" class="btn btn-download btn-sm" download>
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+            Baixar
+          </a>
+        </div>
+        <div class="exam-row">
+          <div class="exam-row-info">
+            <span>Gabarito P1 — 2024.2</span>
+            <small></small>
+          </div>
+          <a href="arquivos/calculo1-p1-2024-2-gabarito.pdf" class="btn btn-download btn-sm" download>
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+            Baixar
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== ÁLGEBRA LINEAR ===== -->
+    <div class="subject-block" data-searchable>
+      <h3>Álgebra Linear</h3>
+
+      <div class="exam-tabs">
+        <button class="exam-tab">Atuais (2025)</button>
+        <button class="exam-tab">Antigas</button>
+        <button class="exam-tab">Gabaritos</button>
+      </div>
+
+      <div class="exam-panel">
+        <div class="exam-row">
+          <div class="exam-row-info">
+            <span>P1 — Sistemas Lineares e Matrizes</span>
+            <small>2025.2 · 25 set 2025</small>
+          </div>
+          <a href="arquivos/algebra-p1-2025-2.pdf" class="btn btn-download btn-sm" download>
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+            Baixar
+          </a>
+        </div>
+      </div>
+
+      <div class="exam-panel">
+        <div class="exam-row">
+          <div class="exam-row-info">
+            <span>P1 — 2024.2</span>
+            <small>Sistemas e Matrizes · 2024</small>
+          </div>
+          <a href="arquivos/algebra-p1-2024-2.pdf" class="btn btn-download btn-sm" download>
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+            Baixar
+          </a>
+        </div>
+        <div class="exam-row">
+          <div class="exam-row-info">
+            <span>P2 — 2024.2</span>
+            <small>Autovalores e Diagonalização · 2024</small>
+          </div>
+          <a href="arquivos/algebra-p2-2024-2.pdf" class="btn btn-download btn-sm" download>
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+            Baixar
+          </a>
+        </div>
+      </div>
+
+      <div class="exam-panel">
+        <div class="exam-row">
+          <div class="exam-row-info">
+            <span>Gabarito P1 — 2024.2</span>
+            <small></small>
+          </div>
+          <a href="arquivos/algebra-p1-2024-2-gabarito.pdf" class="btn btn-download btn-sm" download>
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+            Baixar
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== EQUAÇÕES DIFERENCIAIS ===== -->
+    <div class="subject-block" data-searchable>
+      <h3>Equações Diferenciais</h3>
+
+      <div class="exam-tabs">
+        <button class="exam-tab">Atuais (2025)</button>
+        <button class="exam-tab">Antigas</button>
+        <button class="exam-tab">Gabaritos</button>
+      </div>
+
+      <div class="exam-panel">
+        <div class="exam-row">
+          <div class="exam-row-info">
+            <span>P1 — EDO de 1ª e 2ª Ordem</span>
+            <small>2025.2 · 02 out 2025</small>
+          </div>
+          <a href="arquivos/edo-p1-2025-2.pdf" class="btn btn-download btn-sm" download>
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+            Baixar
+          </a>
+        </div>
+      </div>
+
+      <div class="exam-panel">
+        <div class="exam-row">
+          <div class="exam-row-info">
+            <span>P1 — 2024.1</span>
+            <small>EDO de 1ª Ordem · 2024</small>
+          </div>
+          <a href="arquivos/edo-p1-2024-1.pdf" class="btn btn-download btn-sm" download>
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+            Baixar
+          </a>
+        </div>
+      </div>
+
+      <div class="exam-panel">
+        <div class="exam-row">
+          <div class="exam-row-info">
+            <span>Gabarito P1 — 2024.1</span>
+            <small></small>
+          </div>
+          <a href="arquivos/edo-p1-2024-1-gabarito.pdf" class="btn btn-download btn-sm" download>
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+            Baixar
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== MÉTODOS NUMÉRICOS ===== -->
+    <div class="subject-block" data-searchable>
+      <h3>Métodos Numéricos</h3>
+
+      <div class="exam-tabs">
+        <button class="exam-tab">Atuais (2025)</button>
+        <button class="exam-tab">Antigas</button>
+        <button class="exam-tab">Gabaritos</button>
+      </div>
+
+      <div class="exam-panel">
+        <p class="empty-state">Nenhuma prova atual disponível ainda.</p>
+      </div>
+
+      <div class="exam-panel">
+        <div class="exam-row">
+          <div class="exam-row-info">
+            <span>P1 — Interpolação e Diferenças Finitas</span>
+            <small>2024.1 · Método de Newton</small>
+          </div>
+          <a href="arquivos/numericos-p1-2024-1.pdf" class="btn btn-download btn-sm" download>
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+            Baixar
+          </a>
+        </div>
+      </div>
+
+      <div class="exam-panel">
+        <div class="exam-row">
+          <div class="exam-row-info">
+            <span>Gabarito P1 — 2024.1</span>
+            <small></small>
+          </div>
+          <a href="arquivos/numericos-p1-2024-1-gabarito.pdf" class="btn btn-download btn-sm" download>
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+            Baixar
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODELO: copie este bloco para adicionar uma nova disciplina
+    <div class="subject-block" data-searchable>
+      <h3>NOME DA DISCIPLINA</h3>
+      <div class="exam-tabs">
+        <button class="exam-tab">Atuais</button>
+        <button class="exam-tab">Antigas</button>
+        <button class="exam-tab">Gabaritos</button>
+      </div>
+      <div class="exam-panel">
+        <div class="exam-row">
+          <div class="exam-row-info">
+            <span>TÍTULO DA PROVA</span>
+            <small>SEMESTRE · DATA</small>
+          </div>
+          <a href="arquivos/ARQUIVO.pdf" class="btn btn-download btn-sm" download>Baixar</a>
+        </div>
+      </div>
+      <div class="exam-panel">...</div>
+      <div class="exam-panel">...</div>
+    </div>
+    -->
+
+  </div><!-- /container -->
+</div><!-- /page-wrapper -->
+
+<footer>
+  <p><strong> Emanuel Pinto Sampaio</strong> · Departamento de Matemática · UFES</p>
+  <p><a href="mailto:emanuel.sampaio@edu.ufes.br">emanuel.sampaio@edu.ufes.br</a></p>
+  <p style="margin-top:.75rem;opacity:.6;">© <span id="year"></span> Emanuel Pinto Sampaio</p>
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

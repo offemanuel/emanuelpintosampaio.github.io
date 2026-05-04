@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Materiais — Emanuel Pinto Sampaio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-brand">Prof. <span>Emanuel Pinto Sampaio</span></a>
+  <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  <ul class="nav-links">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="materiais.html">Materiais</a></li>
+    <li><a href="provas.html">Provas</a></li>
+    <li><a href="pesquisas.html">Pesquisas</a></li>
+    <li><a href="videos.html">Vídeos</a></li>
+    <li><a href="contato.html">Contato</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrapper">
+  <div class="container">
+
+    <header class="section-header">
+      <p class="section-tag">Repositório didático</p>
+      <h1>Materiais</h1>
+      <p>Apostilas, listas de exercícios, notas de aula e materiais complementares. Clique em <strong>Baixar</strong> para fazer o download do arquivo.</p>
+    </header>
+
+    <!-- ===== BUSCA ===== -->
+    <div class="search-bar">
+      <svg class="search-icon" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+      </svg>
+      <input type="search" id="search-input" placeholder="Buscar materiais por título ou disciplina..." autocomplete="off" />
+    </div>
+    <p id="search-count"></p>
+
+    <div class="notice">
+      <strong>Como adicionar arquivos:</strong> coloque os PDFs na pasta <code>arquivos/</code> do repositório e atualize o atributo <code>href</code> de cada botão "Baixar" com o caminho correto (ex: <code>arquivos/apostila-calculo1.pdf</code>).
+    </div>
+
+    <!-- =====================================================================
+         APOSTILAS
+         Para adicionar: copie um bloco .material-item e edite os campos.
+    ===================================================================== -->
+    <section id="apostilas" class="mat-category">
+      <p class="mat-category-title">Apostilas</p>
+
+      <div class="material-item" data-searchable>
+        <div class="material-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/>
+          </svg>
+        </div>
+        <div class="material-info">
+          <!-- Edite: título e descrição -->
+          <h4>Apostila de Cálculo I</h4>
+          <p>Limites, derivadas e integrais. Cobertura completa do programa da disciplina MAT001. Atualizada em 2025.</p>
+        </div>
+        <div class="material-action">
+          <!-- Edite: href com o caminho do arquivo -->
+          <a href="arquivos/apostila-calculo1.pdf" class="btn btn-download btn-sm" download>
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/>
+            </svg>
+            Baixar
+          </a>
+        </div>
+      </div>
+
+      <div class="material-item" data-searchable>
+        <div class="material-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/>
+          </svg>
+        </div>
+        <div class="material-info">
+          <h4>Apostila de Álgebra Linear</h4>
+          <p>Vetores, matrizes, sistemas lineares, autovalores e autovetores. Versão 2024.</p>
+        </div>
+        <div class="material-action">
+          <a href="arquivos/apostila-algebra-linear.pdf" class="btn btn-download btn-sm" download>
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/>
+            </svg>
+            Baixar
+          </a>
+        </div>
+      </div>
+
+      <div class="material-item" data-searchable>
+        <div class="material-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/>
+          </svg>
+        </div>
+        <div class="material-info">
+          <h4>Notas de Equações Diferenciais Ordinárias</h4>
+          <p>EDO de 1ª e 2ª ordem, sistemas de EDO, transformada de Laplace. Pós-graduação 2025.</p>
+        </div>
+        <div class="material-action">
+          <a href="arquivos/apostila-edo.pdf" class="btn btn-download btn-sm" download>
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/>
+            </svg>
+            Baixar
+          </a>
+        </div>
+      </div>
+
+      <!-- MODELO APOSTILA: copie este bloco para adicionar
+      <div class="material-item" data-searchable>
+        <div class="material-icon">...</div>
+        <div class="material-info">
+          <h4>TÍTULO DA APOSTILA</h4>
+          <p>Descrição do conteúdo.</p>
+        </div>
+        <div class="material-action">
+          <a href="arquivos/NOME-DO-ARQUIVO.pdf" class="btn btn-download btn-sm" download>Baixar</a>
+        </div>
+      </div>
+      -->
+    </section>
+
+    <!-- =====================================================================
+         LISTAS DE EXERCÍCIOS
+    ===================================================================== -->
+    <section id="listas" class="mat-category">
+      <p class="mat-category-title">Listas de Exercícios</p>
+
+      <div class="material-item" data-searchable>
+        <div class="material-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+          </svg>
+        </div>
+        <div class="material-info">
+          <h4>Lista 1 — Cálculo I: Limites e Continuidade</h4>
+          <p>30 exercícios com dificuldade crescente. Semestre 2025.2.</p>
+        </div>
+        <div class="material-action">
+          <a href="arquivos/lista1-calculo1-limites.pdf" class="btn btn-download btn-sm" download>
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+            Baixar
+          </a>
+        </div>
+      </div>
+
+      <div class="material-item" data-searchable>
+        <div class="material-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+          </svg>
+        </div>
+        <div class="material-info">
+          <h4>Lista 2 — Cálculo I: Derivadas e Aplicações</h4>
+          <p>Regra da cadeia, otimização, teorema do valor médio. Semestre 2025.2.</p>
+        </div>
+        <div class="material-action">
+          <a href="arquivos/lista2-calculo1-derivadas.pdf" class="btn btn-download btn-sm" download>
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+            Baixar
+          </a>
+        </div>
+      </div>
+
+      <div class="material-item" data-searchable>
+        <div class="material-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+          </svg>
+        </div>
+        <div class="material-info">
+          <h4>Lista 1 — Álgebra Linear: Sistemas e Matrizes</h4>
+          <p>Eliminação gaussiana, escalonamento e operações elementares. Semestre 2025.2.</p>
+        </div>
+        <div class="material-action">
+          <a href="arquivos/lista1-algebra-sistemas.pdf" class="btn btn-download btn-sm" download>
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+            Baixar
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- =====================================================================
+         NOTAS DE AULA
+    ===================================================================== -->
+    <section id="notas" class="mat-category">
+      <p class="mat-category-title">Notas de Aula</p>
+
+      <div class="material-item" data-searchable>
+        <div class="material-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+          </svg>
+        </div>
+        <div class="material-info">
+          <h4>Notas — Aula 1: Introdução à Análise Real</h4>
+          <p>Conjuntos, relações, números reais, supremo e ínfimo. Pós-graduação 2025.</p>
+        </div>
+        <div class="material-action">
+          <a href="arquivos/notas-analise-aula1.pdf" class="btn btn-download btn-sm" download>
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+            Baixar
+          </a>
+        </div>
+      </div>
+
+      <div class="material-item" data-searchable>
+        <div class="material-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+          </svg>
+        </div>
+        <div class="material-info">
+          <h4>Notas — Aula 2: Sequências e Séries</h4>
+          <p>Convergência, critérios de Cauchy, séries de potências. Pós-graduação 2025.</p>
+        </div>
+        <div class="material-action">
+          <a href="arquivos/notas-analise-aula2.pdf" class="btn btn-download btn-sm" download>
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+            Baixar
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- =====================================================================
+         MATERIAIS COMPLEMENTARES
+    ===================================================================== -->
+    <section id="complementares" class="mat-category">
+      <p class="mat-category-title">Materiais Complementares</p>
+
+      <div class="material-item" data-searchable>
+        <div class="material-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
+          </svg>
+        </div>
+        <div class="material-info">
+          <h4>Tabela de Derivadas e Integrais</h4>
+          <p>Formulário de referência rápida para uso em provas e estudos.</p>
+        </div>
+        <div class="material-action">
+          <a href="arquivos/formulario-derivadas-integrais.pdf" class="btn btn-download btn-sm" download>
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+            Baixar
+          </a>
+        </div>
+      </div>
+
+      <div class="material-item" data-searchable>
+        <div class="material-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
+          </svg>
+        </div>
+        <div class="material-info">
+          <h4>Guia de Estudo — Prova Final Cálculo I</h4>
+          <p>Roteiro com os tópicos mais cobrados e exercícios de revisão.</p>
+        </div>
+        <div class="material-action">
+          <a href="arquivos/guia-prova-calculo1.pdf" class="btn btn-download btn-sm" download>
+            <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+            Baixar
+          </a>
+        </div>
+      </div>
+
+      <!-- MODELO: adicione mais materiais seguindo o padrão acima -->
+
+    </section>
+
+  </div><!-- /container -->
+</div><!-- /page-wrapper -->
+
+<footer>
+  <p><strong>Emanuel Pinto Sampaio</strong> · Departamento de Matemática · UFES</p>
+  <p><a href="mailto:emanuel.sampaio@edu.ufes.br">emanuel.sampaio@edu.ufes.br</a></p>
+  <p style="margin-top:.75rem;opacity:.6;">© <span id="year"></span> Emanuel Pinto Sampaio</p>
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pesquisas — Emanuel Pinto Sampaio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-brand"> <span>Emanuel Pinto Sampaio</span></a>
+  <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  <ul class="nav-links">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="materiais.html">Materiais</a></li>
+    <li><a href="provas.html">Provas</a></li>
+    <li><a href="pesquisas.html">Pesquisas</a></li>
+    <li><a href="videos.html">Vídeos</a></li>
+    <li><a href="contato.html">Contato</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrapper">
+  <div class="container">
+
+    <header class="section-header">
+      <p class="section-tag">Produção científica</p>
+      <h1>Pesquisas</h1>
+      <p>Projetos em andamento, artigos publicados e temas de pesquisa em desenvolvimento.</p>
+    </header>
+
+    <!-- ===== PROJETOS EM ANDAMENTO ===== -->
+    <section class="page-section" style="padding-top:0; border-top:none;">
+      <p class="section-title">Projetos em andamento</p>
+
+      <div style="display:flex;flex-direction:column;gap:1.25rem;">
+
+        <!-- Edite: adicione um bloco por projeto -->
+        <div class="research-card">
+          <span class="research-badge badge-active">Em andamento</span>
+          <!-- Edite: título, financiador, período e descrição -->
+          <h3>Regularidade de Soluções para EDP Degeneradas com Condições de Fronteira Mistas</h3>
+          <p style="font-family:var(--font-ui);font-size:.8rem;color:var(--accent);font-weight:600;margin-bottom:.6rem;">
+            CNPq — Universal 2023 · 2023–2026
+          </p>
+          <p>
+            Este projeto investiga a regularidade (diferenciabilidade fraca e forte) de soluções fracas para uma
+            classe de equações elípticas degeneradas com condições de Neumann e Dirichlet mistas. Utilizamos
+            técnicas de espaços de Sobolev com pesos e estimativas de Caccioppoli para obter resultados de
+            regularidade interior e de fronteira.
+          </p>
+          <p style="font-size:.88rem;color:var(--gray-500);">
+            <strong>Equipe:</strong> Emanuel Pinto Sampaio (coord.), 2 doutorandos, 1 mestrando.
+          </p>
+        </div>
+
+        <div class="research-card">
+          <span class="research-badge badge-active">Em andamento</span>
+          <h3>Análise Numérica de Esquemas de Alta Ordem para EDP Parabólicas</h3>
+          <p style="font-family:var(--font-ui);font-size:.8rem;color:var(--accent);font-weight:600;margin-bottom:.6rem;">
+            FAPES — PPE 2024 · 2024–2027
+          </p>
+          <p>
+            Desenvolvimento e análise de convergência de métodos de diferenças finitas implícito-explícitos (IMEX)
+            de alta ordem temporal para equações de difusão-reação com não linearidades stiff. O projeto inclui
+            implementação numérica em Python e validação com soluções de referência analíticas.
+          </p>
+          <p style="font-size:.88rem;color:var(--gray-500);">
+            <strong>Equipe:</strong> Emanuel Pinto Sampaio (coord.), 1 doutorando, 2 bolsistas PIBIC.
+          </p>
+        </div>
+
+        <!-- MODELO: copie este bloco para adicionar um projeto
+        <div class="research-card">
+          <span class="research-badge badge-active">Em andamento</span>
+          <h3>TÍTULO DO PROJETO</h3>
+          <p style="font-family:var(--font-ui);font-size:.8rem;color:var(--accent);font-weight:600;margin-bottom:.6rem;">
+            FINANCIADOR · ANO INÍCIO – ANO FIM
+          </p>
+          <p>Descrição do projeto.</p>
+          <p style="font-size:.88rem;color:var(--gray-500);"><strong>Equipe:</strong> ...</p>
+        </div>
+        -->
+
+      </div>
+    </section>
+
+    <!-- ===== ARTIGOS ===== -->
+    <section class="page-section">
+      <p class="section-title">Artigos publicados</p>
+
+      <div style="display:flex;flex-direction:column;gap:1rem;">
+
+        <!-- Edite: referência completa e link para o artigo -->
+        <div class="research-card">
+          <span class="research-badge badge-article">Artigo</span>
+          <h3>Hölder Regularity for Degenerate Elliptic Equations with Mixed Boundary Conditions</h3>
+          <p style="font-size:.88rem;color:var(--gray-700);margin-bottom:.75rem;">
+            <strong>Mendes, C. E.</strong>; Oliveira, R. A. — <em>Journal of Mathematical Analysis and Applications</em>, v. 512, n. 2, 2024.
+          </p>
+          <p style="font-size:.9rem;">
+            Demonstramos regularidade Hölder local e global para soluções fracas de um operador elíptico degenerado
+            do tipo p-Laplaciano com condições de Dirichlet e Neumann. Os resultados generalizam estimativas
+            clássicas de Ladyzhenskaya e Ural'tseva para o caso degenerado.
+          </p>
+          <div style="margin-top:1rem;display:flex;gap:.75rem;flex-wrap:wrap;">
+            <!-- Edite: link DOI ou preprint -->
+            <a href="https://doi.org/10.1016/j.jmaa.2024.000000" target="_blank" rel="noopener" class="btn btn-outline-dark btn-sm">
+              DOI
+            </a>
+            <a href="arquivos/artigo-holder-regularity-2024.pdf" class="btn btn-download btn-sm" download>
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+              PDF
+            </a>
+          </div>
+        </div>
+
+        <div class="research-card">
+          <span class="research-badge badge-article">Artigo</span>
+          <h3>Convergence Analysis of an IMEX Scheme for Nonlinear Parabolic Problems</h3>
+          <p style="font-size:.88rem;color:var(--gray-700);margin-bottom:.75rem;">
+            <strong>Mendes, C. E.</strong>; Ferreira, L. C. F. — <em>Applied Numerical Mathematics</em>, v. 198, 2024.
+          </p>
+          <p style="font-size:.9rem;">
+            Apresentamos uma análise de convergência completa de um esquema IMEX de segunda ordem para EDPs
+            parabólicas com não linearidades stiff. Provamos estabilidade incondicional e erro de truncamento
+            de ordem O(τ² + h⁴) sob condições mínimas de regularidade.
+          </p>
+          <div style="margin-top:1rem;display:flex;gap:.75rem;flex-wrap:wrap;">
+            <a href="https://doi.org/10.1016/j.apnum.2024.000000" target="_blank" rel="noopener" class="btn btn-outline-dark btn-sm">
+              DOI
+            </a>
+            <a href="arquivos/artigo-imex-convergence-2024.pdf" class="btn btn-download btn-sm" download>
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+              PDF
+            </a>
+          </div>
+        </div>
+
+        <div class="research-card">
+          <span class="research-badge badge-concluded">2022</span>
+          <h3>Existence and Uniqueness for a Class of Degenerate Elliptic Problems in Weighted Sobolev Spaces</h3>
+          <p style="font-size:.88rem;color:var(--gray-700);margin-bottom:.75rem;">
+            <strong>Mendes, C. E.</strong> — <em>Nonlinear Analysis</em>, v. 215, 2022.
+          </p>
+          <p style="font-size:.9rem;">
+            Estudo de existência e unicidade de soluções fracas em espaços de Sobolev com pesos para operadores
+            elípticos degenerados. Utilizamos o método de Lax-Milgram generalizado em espaços de Hilbert com peso.
+          </p>
+          <div style="margin-top:1rem;display:flex;gap:.75rem;flex-wrap:wrap;">
+            <a href="https://doi.org/10.1016/j.na.2022.000000" target="_blank" rel="noopener" class="btn btn-outline-dark btn-sm">DOI</a>
+            <a href="arquivos/artigo-existence-uniqueness-2022.pdf" class="btn btn-download btn-sm" download>
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2v10m0 0l-3-3m3 3l3-3M4 17v2a1 1 0 001 1h14a1 1 0 001-1v-2"/></svg>
+              PDF
+            </a>
+          </div>
+        </div>
+
+        <!-- MODELO: copie para adicionar um artigo
+        <div class="research-card">
+          <span class="research-badge badge-article">Artigo</span>
+          <h3>TÍTULO DO ARTIGO</h3>
+          <p style="font-size:.88rem;color:var(--gray-700);margin-bottom:.75rem;">
+            AUTORES — <em>PERIÓDICO</em>, v. X, n. Y, ANO.
+          </p>
+          <p style="font-size:.9rem;">Resumo do artigo.</p>
+          <div style="margin-top:1rem;display:flex;gap:.75rem;">
+            <a href="URL_DOI" target="_blank" rel="noopener" class="btn btn-outline-dark btn-sm">DOI</a>
+            <a href="arquivos/ARQUIVO.pdf" class="btn btn-download btn-sm" download>PDF</a>
+          </div>
+        </div>
+        -->
+
+      </div>
+    </section>
+
+    <!-- ===== TEMAS DE PESQUISA ===== -->
+    <section class="page-section">
+      <p class="section-title">Temas de pesquisa</p>
+      <div class="cards-grid">
+
+        <!-- Edite: adicione ou remova temas -->
+        <div class="card">
+          <p class="card-type">Tema ativo</p>
+          <h3>Operadores Elípticos Degenerados</h3>
+          <p>Estudo de problemas variacionais com pesos que se anulam ou tornam-se singulares na fronteira do domínio.</p>
+        </div>
+
+        <div class="card">
+          <p class="card-type">Tema ativo</p>
+          <h3>Espaços de Sobolev com Pesos</h3>
+          <p>Imersões, desigualdades de Poincaré ponderadas e compacidade em espaços funcionais com estrutura não padrão.</p>
+        </div>
+
+        <div class="card">
+          <p class="card-type">Tema ativo</p>
+          <h3>Métodos IMEX de Alta Ordem</h3>
+          <p>Desenvolvimento e análise de esquemas numéricos implícito-explícitos para EDPs parabólicas stiff não lineares.</p>
+        </div>
+
+        <div class="card">
+          <p class="card-type">Exploratório</p>
+          <h3>Aprendizado de Máquina para EDP</h3>
+          <p>Exploração de métodos de Physics-Informed Neural Networks (PINN) como complemento às abordagens clássicas.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </div><!-- /container -->
+</div><!-- /page-wrapper -->
+
+<footer>
+  <p><strong> Emanuel Pinto Sampaio</strong> · Departamento de Matemática · UFES</p>
+  <p><a href="mailto:emanuel.sampaio@edu.ufes.br">emanuel.sampaio@edu.ufes.br</a></p>
+  <p style="margin-top:.75rem;opacity:.6;">© <span id="year"></span> Emanuel Pinto Sampaio</p>
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
